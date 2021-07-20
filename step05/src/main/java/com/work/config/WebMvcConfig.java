@@ -36,7 +36,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		//	.excludePathPatterns("/resource/**");
 		
 		// 2. needToLoginInterceptor : 로그인 체킹 인터셉터
-		registry.addInterceptor(needToLoginInterceptor).addPathPatterns("/**")
+		registry.addInterceptor(needToLoginInterceptor).addPathPatterns("/**").addPathPatterns("/memberDetail")
 			.excludePathPatterns("/css/**").excludePathPatterns("/js/**").excludePathPatterns("/img/**")
 			.excludePathPatterns("/").excludePathPatterns("/main")
 			.excludePathPatterns("/loginForm").excludePathPatterns("/login")
@@ -49,7 +49,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		
 		// 4. needToAdminInterceptor : 
 		registry.addInterceptor(needToAdminInterceptor)
-			.addPathPatterns("/memberList").addPathPatterns("/memberDetail");
+			.addPathPatterns("/memberList");
 		
 		WebMvcConfigurer.super.addInterceptors(registry);
 	}
