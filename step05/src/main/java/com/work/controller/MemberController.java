@@ -131,4 +131,28 @@ public class MemberController {
 		return "memberList";
 	}
 
+	@RequestMapping("/myInfo")
+	public String myInfo(String memberId, Model model, HttpSession session) {
+		memberId = (String) session.getAttribute(memberId);
+		Member dto = memberService.myInfo(memberId);
+		model.addAttribute("dto", dto);
+		return "memberDetail";
+	}
+	
+	@RequestMapping("/myInfoUpdate")
+	public String myInfoUpdate() {
+		return null;
+	}
+	
+	@RequestMapping("/findMyId")
+	public String findMyId(String name, String mobile, String email) {
+		return null;
+	}
+	
+	@RequestMapping("/findMyPw")
+	public String findMyPw(String memberId, String name, String email) {
+		return null;
+	}
+	
+	
 }

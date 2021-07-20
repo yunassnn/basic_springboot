@@ -58,11 +58,17 @@ public class MemberService {
 	public List<Member> memberListByCondition(String condition, String keyword) {
 		return memberDao.selectMemberListByCondition(condition, keyword);
 	}
-
+	
+	/** 다중아이디 조회 */
 	public List<Member> memberIdListByCondition(String condition, String[] memberIdList) {
 		return memberDao.selectMemberIdListByCondition(condition, memberIdList);
 	}
 
+	/** 내정보조회 */
+	public Member myInfo(String memberId) {
+		Member dto = memberDao.selectMember(memberId);
+		return dto;
+	}
 	
 	
 	
