@@ -33,7 +33,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                 
-                <div class="sidebar-brand-text mx-3">TOY 101</div>
+                <div class="sidebar-brand-text mx-3">SIDE-ON</div>
             </a>
 
             <!-- Divider -->
