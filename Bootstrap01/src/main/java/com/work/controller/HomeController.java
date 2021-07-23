@@ -24,6 +24,12 @@ public class HomeController {
 		return "index";
 	}
 
+	@RequestMapping("/index_b")
+	public String mian2() {
+		log.debug("홈 컨트롤러 구동 :: main2() 실행 ");
+		return "index_b";
+	}
+
 	@RequestMapping("/loginForm")
 	public String loginForm() {
 		log.debug("홈 컨트롤러 구동 :: loginForm() 실행 ");
