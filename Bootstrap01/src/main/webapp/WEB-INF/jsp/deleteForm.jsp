@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #FFD026">
+<html lang="en">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login</title>
+    <title>Delete Account</title>
 
     <!-- Custom fonts for this template-->
     <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,10 +24,10 @@
 
 <body class="bg-gradient-primary">
 
-    <div class="container" style="background-color: #FFD026">
+    <div class="container">
 
         <!-- Outer Row -->
-        <div class="row justify-content-center" >
+        <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
 
@@ -39,9 +39,9 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Delete Member</h1>
                                     </div>
-                                    <form class="user" action="login">
+                                    <form class="user" action="deleteMember">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="memberId" name="memberId" aria-describedby="emailHelp"
@@ -52,26 +52,14 @@
                                                 id="memberPw" name="memberPw" placeholder="Password">
                                         </div>
                                         <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
+                                            <input type="password" class="form-control form-control-user"
+                                                id="memberPwChk" name="memberPwChk" placeholder="Password check">
                                         </div>
-                                        <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
-                                        
                                         <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
+                                        <input type="submit" value="Delete Account" class="btn btn-primary btn-user btn-block" style="background-color: #18ab76">
+                                        
                                     </form>
                                     <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password">Forgot your ID or PW?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register">Create an Account!</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>

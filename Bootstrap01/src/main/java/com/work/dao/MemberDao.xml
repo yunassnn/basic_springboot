@@ -53,6 +53,11 @@
 		</if>
 	</select>
 	
+	<!-- public void deleteMember(String memberId, String memberPw) -->
+	<delete id="deleteMember" parameterType="map">
+		delete from member where member_id=#{memberId} and member_pw=#{memberPw}  
+	</delete>
+	
 </mapper>
 
 

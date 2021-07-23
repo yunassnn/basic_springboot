@@ -15,11 +15,11 @@
 	</appender>
 
 	<!-- Logger : base package 지정, 로그 level 설정 -->
-	<logger name="com.work" level="ERROR" appender-ref="console" />
+	<logger name="com.work" level="DEBUG" appender-ref="console" />
 	
 	<!-- jdbc log -->
-	<logger name="jdbc.sqlonly" level="INFO" appender-ref="console-infolog" />
-	<logger name="jdbc.resultsettable" level="INFO" appender-ref="console-infolog" />
+	<logger name="jdbc.sqlonly" level="DEBUG" appender-ref="console-infolog" />
+	<logger name="jdbc.resultsettable" level="DEBUG" appender-ref="console-infolog" />
 
 	<!-- Root Logger -->
 	<root level="off">

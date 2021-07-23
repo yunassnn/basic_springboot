@@ -65,5 +65,15 @@ public class MemberService {
 		Member dto = memberDao.selectMember(memberId);
 		return dto;
 	}
+
+	public boolean deleteMember(String memberId, String memberPw) {
+		if(memberId != null && memberPw != null) {			
+			memberDao.deleteMember(memberId, memberPw); 
+		} else {
+			log.debug("deleteMember Fail :: memberService");
+			return false;
+		}
+		return true;
+	}
 	
 }

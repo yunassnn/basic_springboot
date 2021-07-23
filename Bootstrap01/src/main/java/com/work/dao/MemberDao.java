@@ -31,6 +31,8 @@ public interface MemberDao {
 	/** 여러 아이디 검색 */
 	public List<Member> selectMemberIdListByCondition(String condition, String[] memberIdList);
 
-	
+	/** 회원탈퇴 */
+	public void deleteMember(String memberId, String memberPw);
+
 	
 }
