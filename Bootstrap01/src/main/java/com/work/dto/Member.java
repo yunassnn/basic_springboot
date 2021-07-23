@@ -27,4 +27,6 @@ public class Member {
 	
 	private String restCount;
 	
+	private String reward;
+	
 }
