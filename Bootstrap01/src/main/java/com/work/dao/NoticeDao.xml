@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.work.dao.NoticeDao">
+	
+	<!-- public List<Notice> selectNoticeList() -->
+	<select id="selectNoticeList" resultType="com.work.dto.Notice">
+		select * from notice order by notice_no
+	</select>
+	
+	<select id="selectNotice" resultType="com.work.dto.Notice" parameterType="String">
+		select * from notice where notice_no=#{noticeNo}
+	</select>
+
+</mapper>
