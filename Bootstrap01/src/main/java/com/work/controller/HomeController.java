@@ -1,9 +1,12 @@
 package com.work.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.work.dto.Member;
@@ -29,6 +32,14 @@ public class HomeController {
 		log.debug("홈 컨트롤러 구동 :: main2() 실행 ");
 		return "index_b";
 	}
+
+	@RequestMapping("/noticeList")
+	public String noticeList() {
+		log.debug("홈 컨트롤러 구동 :: noticeList() 실행 ");
+		return "noticeList";
+	}
+
+	
 
 	@RequestMapping("/loginForm")
 	public String loginForm() {
@@ -89,6 +100,14 @@ public class HomeController {
 	public String restList() {
 		log.debug("rest List");
 		return "/restList";
+	}
+	
+	@RequestMapping("/testList")
+	public String testList(Model model) {
+		List<Member> list = memberService.memberList();
+		log.debug("리스트 사이즈 :: " + list.size());
+		model.addAttribute("list", list);
+		return "testList";
 	}
 	
 	@RequestMapping("/buttons")
