@@ -1,5 +1,8 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -468,24 +471,51 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Notice Board</h2>
+                                    <hr>
+                                    <!-- 
                                     <img class="img-fluid d-block mx-auto" src="resources/assets/img/portfolio/3.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                     -->
+                                    <!-- 공지사항 목록... 본문 -->
+                                    <form action="testList">
+                                    	<table>
+                                    		<tr>
+                                    			<th>No</th>
+                                    			<th>Title</th>
+                                    			<th>admin</th>
+                                    		</tr>
+                                    		<c:forEach var="dto" items="${list}" varStatus="status">
+                                    			<tr>
+                                    				<th>${status.count}</th>
+                                    				<!-- 
+                                    				<th><a href="noticeDetail?noticeNo=${dto.noticeNo}" title="${dto.title}공지보기"></a></th>
+                                    				 -->
+                                    				<th>${dto.mobile}</th>
+                                    				<th>${dto.memberId}</th>
+                                    			</tr>
+                                    		</c:forEach>
+                                    	</table>
+                                    </form>
+                                     
+                                    <hr>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Finish
+                                            ADMIN :: user05
                                         </li>
+                                        <!-- 
                                         <li>
                                             <strong>Category:</strong>
                                             Identity
                                         </li>
+                                         -->
                                     </ul>
+                                    <!-- 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Close Project
                                     </button>
+                                     -->
                                 </div>
                             </div>
                         </div>
