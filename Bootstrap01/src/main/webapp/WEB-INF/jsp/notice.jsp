@@ -31,7 +31,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-         <!-- Sidebar -->
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" 
         	style="background-color:yellow; background-image:linear-gradient(180deg,#3f3f3f 10%,#ffc800 100%);">
 
@@ -64,6 +64,14 @@
                 <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>My page</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Member Management</span>
                 </a>
             </li>
 
@@ -138,7 +146,7 @@
                 <div class="card shadow mb-4">
                 	<!-- content header 제목 -->
                 	<div class="card-header py-3">
-                	그렇군
+                	NOTICE
                 	</div>
                 	
                 	<!-- content body 내용 -->
@@ -165,7 +173,7 @@
                 					<c:forEach var="dto" items="${noticeList}" varStatus="status">
 	               						<tr>
 	               							<th>${dto.noticeNo}</th>
-	                						<th><a href="noticeDetail?noticeNo=${dto.noticeNo}">${dto.noticeTitle}</a></th>
+	                						<th><a href="noticeDetail?noticeNo=${dto.noticeNo}" style="color: #3f3f3f;">${dto.noticeTitle}</a></th>
 	                						<!-- 
 	                						<th>${dto.noticeContent}</th>
 	                						 -->

@@ -28,12 +28,13 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" 
+        	style="background-color:yellow; background-image:linear-gradient(180deg,#3f3f3f 10%,#ffc800 100%);">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                 
-                <div class="sidebar-brand-text mx-3">SIDE-ON</div>
+                <div class="sidebar-brand-text mx-3">Admin</div>
             </a>
 
             <!-- Divider -->
@@ -56,20 +57,18 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>My page</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">My Menu</h6>
-                        <a class="collapse-item" href="buttons">edit profile</a>
-                        <a class="collapse-item" href="cards">change password</a>
-                        <a class="collapse-item" href="deleteForm">delete profile</a>
-                        <a class="collapse-item" href="cards">logout</a>
-                    </div>
-                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Member Management</span>
+                </a>
             </li>
 
             <!-- Nav Item - mypage -->

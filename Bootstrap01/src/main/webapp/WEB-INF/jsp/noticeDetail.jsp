@@ -31,7 +31,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-         <!-- Sidebar -->
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" 
         	style="background-color:yellow; background-image:linear-gradient(180deg,#3f3f3f 10%,#ffc800 100%);">
 
@@ -64,6 +64,14 @@
                 <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>My page</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Member Management</span>
                 </a>
             </li>
 
@@ -138,7 +146,7 @@
                 <div class="card shadow mb-4">
                 	<!-- content header 제목 -->
                 	<div class="card-header py-3">
-                	그렇군
+                	NOTICE
                 	</div>
                 	
                 	<!-- content body 내용 -->
@@ -148,29 +156,36 @@
                 				<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd;">
                 					<thead>
                 						<tr>
-                							<th style="background-color: #eeeeee; text-align: left;">No</th>
+                							<th colspan="1" style="background-color: #eeeeee; ">No.${dto.noticeNo}</th>
+                							<!-- 
                 							<td>${dto.noticeNo}</td>
-                							
+                							 -->
+                							<!-- 
                 							<th style="background-color: #eeeeee; text-align: center;">제목</th>
-                							<td>${dto.noticeTitle}</td>
+                							 -->
+                							<td colspan="5" style="text-align: left;">${dto.noticeTitle}</td>
                 							
-                							<th style="background-color: #eeeeee; text-align: right;">조회수</th>                							
-                							<td>${dto.viewCount}</td>
                 						</tr>
 
                 						<tr>
-                							<th style="background-color: #eeeeee; text-align: right;">작성자</th>
-                							<td>${dto.memberId}</td>
+                							<th colspan="1" style="background-color: #eeeeee;">작성자</th>
+                							<td colspan="1">${dto.memberId}</td>
                 							
-                							<th style="background-color: #eeeeee; text-align: right;">게시일</th>
-                							<td>${dto.noticeDate}</td>
-                						</tr>
-                							
-                						<tr>
-                							<th style="background-color: #eeeeee; text-align: center;">내용</th>
-                							<td>${dto.noticeContent}</td>
+                							<th colspan="1" style="background-color: #eeeeee; ">조회수</th>                							
+                							<td colspan="1">${dto.viewCount}</td>
+
+                							<th colspan="1" style="background-color: #eeeeee;">게시일</th>
+                							<td colspan="1">${dto.noticeDate}</td>
                 						</tr>
                 					</thead>
+                					<tbody>
+                						<tr>
+                						<!-- 
+                							<th style="background-color: #eeeeee;">내용</th>
+                						 -->
+                							<td colspan="6" style="background-color:#fff; text-align: center;">${dto.noticeContent}</td>
+                						</tr>
+                					</tbody>
                 				</table>
                 			</div>
                 		</div>
