@@ -5,7 +5,7 @@
 	
 	<!-- public List<Notice> selectNoticeList() -->
 	<select id="selectNoticeList" resultType="com.work.dto.Notice">
-		select * from notice order by notice_no
+		select * from notice where visible_check='F' order by notice_no
 	</select>
 	
 	<select id="selectNotice" resultType="com.work.dto.Notice" parameterType="String">

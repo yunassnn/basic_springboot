@@ -24,6 +24,7 @@ public class NoticeService {
 
 	public Notice noticeDetail(String noticeNo) {
 		Notice dto = noticeDao.selectNotice(noticeNo);
+		log.debug("No.dto NOTICE :: " + noticeNo + ", " + dto);
 		return dto;
 	}
 }

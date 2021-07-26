@@ -33,10 +33,10 @@ public class HomeController {
 		return "index_b";
 	}
 
-	@RequestMapping("/noticeList")
+	@RequestMapping("/noticeList2")
 	public String noticeList() {
-		log.debug("홈 컨트롤러 구동 :: noticeList() 실행 ");
-		return "noticeList";
+		log.debug("홈 컨트롤러 구동 :: noticeList2() 실행 ");
+		return "noticeList2";
 	}
 
 	
@@ -94,12 +94,6 @@ public class HomeController {
 	public String alertTest() {
 		log.debug("신고접수팝업");
 		return "/alertTest";
-	}
-
-	@RequestMapping("/restList")
-	public String restList() {
-		log.debug("rest List");
-		return "/restList";
 	}
 	
 	@RequestMapping("/testList")
