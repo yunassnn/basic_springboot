@@ -22,7 +22,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-image: linear-gradient(180deg, #3f3f3f 3%, #fff 100%);">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #fff;">
             <div class="container">
                 <a class="navbar-brand" href="#page-top"><img src="resources/assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='#fff';">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='black';">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='black';">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='black';">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='black';">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onmouseover="this.style.color='#ffc800';" onmouseout="this.style.color='black';">Contact</a></li>
                     </ul>
                 </div>
             </div>
