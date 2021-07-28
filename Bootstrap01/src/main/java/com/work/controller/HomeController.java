@@ -116,6 +116,11 @@ public class HomeController {
 		log.debug("홈 컨트롤러 구동 :: blank() 실행 ");
 		return "blank";
 	}
+	@RequestMapping("/register")
+	public String register() {
+		log.debug("홈 컨트롤러 구동 :: register() 실행 ");
+		return "register";
+	}
 	
 	
 	
